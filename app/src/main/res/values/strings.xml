@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NetblinkApp</string>
+    <string name="student_name">Nama</string>
+    <string name="epl">Welcome to
+    \n Netflix app
+        </string>
+</resources>

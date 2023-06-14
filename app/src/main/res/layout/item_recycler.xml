@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitleFinalValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="Meeting 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleFinal" />
+
+        <TextView
+            android:id="@+id/tvDescValueFinal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Meeting Bangkit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescFinal"
+            app:layout_constraintStart_toStartOf="@+id/tvDescFinal"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescFinal" />
+
+        <TextView
+            android:id="@+id/tvRangeTimeStartValueFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2023-12-10- 23:10"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleFinalValue"
+            app:layout_constraintTop_toBottomOf="@+id/tvRangeTimeFinal" />
+
+        <TextView
+            android:id="@+id/tvStripFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="-"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRangeTimeStartValueFinal"
+            app:layout_constraintStart_toEndOf="@+id/tvRangeTimeStartValueFinal"
+            app:layout_constraintTop_toTopOf="@+id/tvRangeTimeStartValueFinal" />
+
+        <TextView
+            android:id="@+id/tvRangeTimeEndValueFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2023-12-10- 23:10"
+            app:layout_constraintBottom_toBottomOf="@+id/tvStripFinal"
+            app:layout_constraintStart_toEndOf="@+id/tvStripFinal"
+            app:layout_constraintTop_toTopOf="@+id/tvStripFinal" />
+
+        <TextView
+            android:id="@+id/tvTitleFinal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Judul"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRangeTimeFinal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Durasi Aktivitas"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitleFinalValue"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleFinalValue"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleFinalValue" />
+
+        <TextView
+            android:id="@+id/tvDescFinal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Deskripsi"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/tvRangeTimeFinal"
+            app:layout_constraintStart_toStartOf="@+id/tvRangeTimeFinal"
+            app:layout_constraintTop_toBottomOf="@+id/tvRangeTimeEndValueFinal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
